@@ -4,7 +4,7 @@ import TextInput from "../TextInputs/TextInput.jsx"
 import ListaOpciones from "../ListaOpciones"
 import Boton from "../Boton"
 
-const Formulario = () => {
+const Formulario = (props) => {
 
     const [nombre, actualizarNombre] = useState("")
     // console.log(nombre);
@@ -16,12 +16,13 @@ const Formulario = () => {
 //---------------/=============/==========//
     const manejarEnvio = (evento) => {
         evento.preventDefault()
-        // console.log("manejar Envio", evento)
+        //console.log("manejar Envio", evento)
 
         let datosAEnviar = {
             nombre,
             puesto,
-            foto
+            foto,
+            equipo
         }
 
         console.log("envia estos datos", datosAEnviar)
@@ -58,6 +59,7 @@ const Formulario = () => {
             <ListaOpciones 
                 valor={equipo}
                 actualizarValor={actualizarEquipo}
+                equipos={props.equipos}
             />
             <Boton>
             Crear Colaborador
