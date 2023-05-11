@@ -4,6 +4,7 @@ import Header from './components/Header/Header.jsx';
 import Formulario from './components/Formulario/Formulario.jsx';
 import MiOrg from './components/MiOrg';
 import Equipo from './components/Equipo';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -23,8 +24,15 @@ function App() {
     console.log("Nuevo colaborador", colaborador)
     //Spread operator
     actualizarColaboradores([...colaboradores, colaborador])
+  }
+
+  //Eliminar colaborador
+  const eliminarColaborador = () =>{
+    console.log("Eliminar colaborador")
 
   }
+
+
 
   //lista equipos
   const equipos = [
@@ -90,13 +98,16 @@ function App() {
       {
         equipos.map((equipo) => {
           console.log ("equipo", equipo)
-          return <Equipo datos={equipo} 
+          return <Equipo 
+          datos={equipo} 
           key={equipo.titulo} 
           colaboradores={colaboradores.filter( colaborador => colaborador.equipo === equipo.titulo)}
+          eliminar={eliminarColaborador}
           />
         })
       }
 
+      <Footer/>
 
     </div>
   );

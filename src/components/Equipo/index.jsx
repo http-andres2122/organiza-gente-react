@@ -4,7 +4,7 @@ const Equipo = (props) => {
 
     //Destructuracion
     const { colorPrimario, colorSecundario, titulo } = props.datos
-    const { colaboradores } = props
+    const { colaboradores, eliminar } = props
 
     console.log(colaboradores.length > 0)
 
@@ -24,6 +24,7 @@ const Equipo = (props) => {
                         datos={colaborador} 
                         key={index} 
                         colorSecundario={colorSecundario}
+                        eliminarColaborador={eliminar}
                     />)
                 }
             </div>
