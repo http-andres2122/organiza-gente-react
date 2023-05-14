@@ -1,11 +1,16 @@
 // import { useState } from "react"
-import "./TextInput.css"
+import "./Inputs.css"
 
-const TextInput = (props) => {
+const Inputs = (props) => {
 
     // const [valor, actualizarValor] = useState(" ")
     // console.log("Datos", props)
     
+
+    const { type = "text" } = props
+
+    console.log(type)
+
     const manejarCambio = (e) => {
         // console.log("cambio", e.target.value)
         props.actualizarValor(e.target.value)
@@ -14,16 +19,17 @@ const TextInput = (props) => {
     const placeholdermod = `${props.placeHolder}...`
 
 
-    return <div className="TextInput">
+    return <div className={ `Input Input-${type}` }>
         <label>{props.titulo}</label>
         <input 
         placeholder={placeholdermod} 
         required={props.required} 
         value={props.valor}
         onChange={manejarCambio}
+        type={type}
         />
 
     </div>
 }
 
-export default TextInput
+export default Inputs
