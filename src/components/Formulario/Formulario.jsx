@@ -1,20 +1,17 @@
 import { useState } from "react"
 import "./Formulario.css"
-import TextInput from "../TextInputs/TextInput.jsx"
+import Inputs from "../Inputs/Inputs.jsx"
 import ListaOpciones from "../ListaOpciones"
 import Boton from "../Boton"
 
 const Formulario = (props) => {
 
     const [nombre, actualizarNombre] = useState("")
-    // console.log(nombre);
     const [puesto, actualizarPuesto] = useState("")
     const [foto, actualizarFoto] = useState("")
     const [equipo, actualizarEquipo] = useState("")
-
     const [titulo, actualizarTitulo] = useState ("")
     const [color, actualizarColor] = useState ("")
-
     const { registrarColaborador, crearEquipo } = props
 
 
@@ -41,7 +38,7 @@ const Formulario = (props) => {
     return <section className="formulario">
         <form onSubmit={manejarEnvio}>
             <h2>Rellena el formulario para crear un creador.</h2>
-            <TextInput 
+            <Inputs
                 titulo="Nombre" 
                 placeHolder="Ingrese Nombre" 
                 required 
@@ -49,7 +46,7 @@ const Formulario = (props) => {
                 actualizarValor={actualizarNombre}
             />
 
-            <TextInput 
+            <Inputs
                 titulo="Puesto" 
                 placeHolder="Ingrese Puesto" 
                 required 
@@ -57,7 +54,7 @@ const Formulario = (props) => {
                 actualizarValor={actualizarPuesto} 
             />
 
-            <TextInput 
+            <Inputs
                 titulo="Foto" 
                 placeHolder="Ingresar enlace de foto" 
                 required 
@@ -78,7 +75,7 @@ const Formulario = (props) => {
 
         <form onSubmit={manejarNuevoEquipo}>
             <h2>Rellena el formulario para crear el equipo.</h2>
-            <TextInput 
+            <Inputs
                 titulo="Titulo" 
                 placeHolder="Ingresar Titulo" 
                 required 
@@ -86,12 +83,13 @@ const Formulario = (props) => {
                 actualizarValor={actualizarTitulo}
             />
 
-            <TextInput 
+            <Inputs
                 titulo="Color" 
                 placeHolder="Ingrese color en hexadecimal" 
                 required 
                 valor={color} 
-                actualizarValor={actualizarColor} 
+                actualizarValor={actualizarColor}
+                type="color"
             />
             <Boton>Registrar equipo</Boton>
         </form>
