@@ -17,13 +17,21 @@
     display: inline-block;
     padding-bottom: 8px;
     font-weight: 400;
+    font-size: 30px;
+    /* font-size: 3.14vw; */
     color: #212121;
     border-bottom: 4px solid;
 }
 
 .colaboradores {
     display: flex;
+    /* margin: 0 1rem; */
     justify-content: space-evenly;
     flex-wrap: wrap;
-
 }
+
+/* @media only screen and (max-width: 576px) {
+    .equipo h3{
+        font-size:30px;
+    }
+} */

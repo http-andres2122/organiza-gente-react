@@ -11,10 +11,20 @@
     background-color: #F6F6F6;
     box-shadow: 7px 7px 15px rgba(0, 0, 0, 20%);
     border-radius: 20px;
-    padding: 8px 100px;
+    padding: 8px 50px;
 }
 
 .formulario h2 {
     font-weight: 400;
     font-size: 32px;
+}
+
+@media only screen and (max-width: 900px) {
+    .formulario form {
+        padding: 8px 8px;
+    }
+    .formulario{
+        flex-direction: column;
+        margin: 50px 50px;
+    }
 }

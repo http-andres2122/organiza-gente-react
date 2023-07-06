@@ -6,6 +6,7 @@ import Formulario from './components/Formulario/Formulario.jsx';
 import MiOrg from './components/MiOrg';
 import Equipo from './components/Equipo';
 import Footer from './components/Footer';
+import ScrollButton from './components/Scroll-Button/Scroll-Button';
 
 function App() {
 
@@ -21,6 +22,62 @@ function App() {
     },
     {
       id: uuid(),
+      equipo: "Front End",
+      foto: "https://github.com/http-andres2122.png",
+      nombre: "Andres",
+      puesto: "Analista informatico, Desarrollador WEB",
+      fav: true
+    },
+    {
+      id: uuid(),
+      equipo: "Front End",
+      foto: "https://github.com/genesysaluralatam.png",
+      nombre: "Genesys Rondón",
+      puesto: "Desarrolladora de software e instructora",
+      fav: false
+    },
+    {
+      id: uuid(),
+      equipo: "Front End",
+      foto: "https://github.com/JeanmarieAluraLatam.png",
+      nombre: "Jeanmarie Quijada",
+      puesto: "Instructora en Alura Latam",
+      fav: false
+    },
+    {
+      id: uuid(),
+      equipo: "Front End",
+      foto: "https://github.com/christianpva.png",
+      nombre: "Christian Velasco",
+      puesto: "Head de Alura e Instructor",
+      fav: false
+    },
+    {
+      id: uuid(),
+      equipo: "Front End",
+      foto: "https://github.com/JoseDarioGonzalezCha.png",
+      nombre: "Jose Gonzalez",
+      puesto: "Dev FullStack",
+      fav: false
+    },
+    {
+      id: uuid(),
+      equipo: "Programación",
+      foto: "https://github.com/harlandlohora.png",
+      nombre: "Harland Lohora",
+      puesto: "Instructor",
+      fav: true
+    },
+    {
+      id: uuid(),
+      equipo: "Programación",
+      foto: "https://github.com/http-andres2122.png",
+      nombre: "Andres",
+      puesto: "Analista informatico, Desarrollador WEB",
+      fav: true
+    },
+    {
+      id: uuid(),
       equipo: "Programación",
       foto: "https://github.com/genesysaluralatam.png",
       nombre: "Genesys Rondón",
@@ -29,7 +86,7 @@ function App() {
     },
     {
       id: uuid(),
-      equipo: "UX y Diseño",
+      equipo: "Programación",
       foto: "https://github.com/JeanmarieAluraLatam.png",
       nombre: "Jeanmarie Quijada",
       puesto: "Instructora en Alura Latam",
@@ -45,12 +102,229 @@ function App() {
     },
     {
       id: uuid(),
-      equipo: "Innovación y Gestión",
+      equipo: "Programación",
       foto: "https://github.com/JoseDarioGonzalezCha.png",
       nombre: "Jose Gonzalez",
       puesto: "Dev FullStack",
       fav: false
-    }
+    },
+    {
+      id: uuid(),
+      equipo: "Data Science",
+      foto: "https://github.com/harlandlohora.png",
+      nombre: "Harland Lohora",
+      puesto: "Instructor",
+      fav: true
+    },
+    {
+      id: uuid(),
+      equipo: "Data Science",
+      foto: "https://github.com/http-andres2122.png",
+      nombre: "Andres",
+      puesto: "Analista informatico, Desarrollador WEB",
+      fav: true
+    },
+    {
+      id: uuid(),
+      equipo: "Data Science",
+      foto: "https://github.com/genesysaluralatam.png",
+      nombre: "Genesys Rondón",
+      puesto: "Desarrolladora de software e instructora",
+      fav: false
+    },
+    {
+      id: uuid(),
+      equipo: "Data Science",
+      foto: "https://github.com/JeanmarieAluraLatam.png",
+      nombre: "Jeanmarie Quijada",
+      puesto: "Instructora en Alura Latam",
+      fav: false
+    },
+    {
+      id: uuid(),
+      equipo: "Data Science",
+      foto: "https://github.com/christianpva.png",
+      nombre: "Christian Velasco",
+      puesto: "Head de Alura e Instructor",
+      fav: false
+    },
+    {
+      id: uuid(),
+      equipo: "Data Science",
+      foto: "https://github.com/JoseDarioGonzalezCha.png",
+      nombre: "Jose Gonzalez",
+      puesto: "Dev FullStack",
+      fav: false
+    },
+    {
+      id: uuid(),
+      equipo: "Devops",
+      foto: "https://github.com/harlandlohora.png",
+      nombre: "Harland Lohora",
+      puesto: "Instructor",
+      fav: true
+    },
+    {
+      id: uuid(),
+      equipo: "Devops",
+      foto: "https://github.com/http-andres2122.png",
+      nombre: "Andres",
+      puesto: "Analista Informatico, desarollador web",
+      fav: true
+    },
+    {
+      id: uuid(),
+      equipo: "Devops",
+      foto: "https://github.com/genesysaluralatam.png",
+      nombre: "Genesys Rondón",
+      puesto: "Desarrolladora de software e instructora",
+      fav: false
+    },
+    {
+      id: uuid(),
+      equipo: "Devops",
+      foto: "https://github.com/JeanmarieAluraLatam.png",
+      nombre: "Jeanmarie Quijada",
+      puesto: "Instructora en Alura Latam",
+      fav: false
+    },
+    {
+      id: uuid(),
+      equipo: "Devops",
+      foto: "https://github.com/christianpva.png",
+      nombre: "Christian Velasco",
+      puesto: "Head de Alura e Instructor",
+      fav: false
+    },
+    {
+      id: uuid(),
+      equipo: "Devops",
+      foto: "https://github.com/JoseDarioGonzalezCha.png",
+      nombre: "Jose Gonzalez",
+      puesto: "Dev FullStack",
+      fav: false
+    },
+    {
+      id: uuid(),
+      equipo: "UX y Diseño",
+      foto: "https://github.com/harlandlohora.png",
+      nombre: "Harland Lohora",
+      puesto: "Instructor",
+      fav: true
+    },
+    {
+      id: uuid(),
+      equipo: "UX y Diseño",
+      foto: "https://github.com/http-andres2122.png",
+      nombre: "Andres",
+      puesto: "Analista Informatico, desarollador web",
+      fav: true
+    },
+    {
+      id: uuid(),
+      equipo: "UX y Diseño",
+      foto: "https://github.com/genesysaluralatam.png",
+      nombre: "Genesys Rondón",
+      puesto: "Desarrolladora de software e instructora",
+      fav: false
+    },
+    {
+      id: uuid(),
+      equipo: "UX y Diseño",
+      foto: "https://github.com/JeanmarieAluraLatam.png",
+      nombre: "Jeanmarie Quijada",
+      puesto: "Instructora en Alura Latam",
+      fav: false
+    },
+    {
+      id: uuid(),
+      equipo: "UX y Diseño",
+      foto: "https://github.com/christianpva.png",
+      nombre: "Christian Velasco",
+      puesto: "Head de Alura e Instructor",
+      fav: false
+    },
+    {
+      id: uuid(),
+      equipo: "UX y Diseño",
+      foto: "https://github.com/JoseDarioGonzalezCha.png",
+      nombre: "Jose Gonzalez",
+      puesto: "Dev FullStack",
+      fav: false
+    },
+    {
+      id: uuid(),
+      equipo: "Móvil",
+      foto: "https://github.com/harlandlohora.png",
+      nombre: "Harland Lohora",
+      puesto: "Instructor",
+      fav: true
+    },
+    {
+      id: uuid(),
+      equipo: "Móvil",
+      foto: "https://github.com/http-andres2122.png",
+      nombre: "Andres",
+      puesto: "Analista Informatico, desarollador web",
+      fav: true
+    },
+    {
+      id: uuid(),
+      equipo: "Móvil",
+      foto: "https://github.com/JeanmarieAluraLatam.png",
+      nombre: "Jeanmarie Quijada",
+      puesto: "Instructora en Alura Latam",
+      fav: false
+    },
+    {
+      id: uuid(),
+      equipo: "Móvil",
+      foto: "https://github.com/christianpva.png",
+      nombre: "Christian Velasco",
+      puesto: "Head de Alura e Instructor",
+      fav: false
+    },
+    {
+      id: uuid(),
+      equipo: "Móvil",
+      foto: "https://github.com/JoseDarioGonzalezCha.png",
+      nombre: "Jose Gonzalez",
+      puesto: "Dev FullStack",
+      fav: false
+    },
+    {
+      id: uuid(),
+      equipo: "Innovación y  Gestión",
+      foto: "https://github.com/http-andres2122.png",
+      nombre: "Andres",
+      puesto: "Analista Informatico, desarollador web",
+      fav: true
+    },
+    {
+      id: uuid(),
+      equipo: "Innovación y  Gestión",
+      foto: "https://github.com/genesysaluralatam.png",
+      nombre: "Genesys Rondón",
+      puesto: "Desarrolladora de software e instructora",
+      fav: false
+    },
+    {
+      id: uuid(),
+      equipo: "Innovación y  Gestión",
+      foto: "https://github.com/JeanmarieAluraLatam.png",
+      nombre: "Jeanmarie Quijada",
+      puesto: "Instructora en Alura Latam",
+      fav: false
+    },
+    {
+      id: uuid(),
+      equipo: "Innovación y  Gestión",
+      foto: "https://github.com/christianpva.png",
+      nombre: "Christian Velasco",
+      puesto: "Head de Alura e Instructor",
+      fav: false
+    },
+
   ])
   const [equipos, actualizarEquipos] = useState([
     {
@@ -178,6 +452,7 @@ function App() {
           />
         })
       }
+      <ScrollButton/>
 
       <Footer/>
 

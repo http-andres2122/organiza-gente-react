@@ -1,5 +1,6 @@
 .colaborador {
-    width: 280px;
+    width: 17rem;
+    margin: 0 1rem;
     margin-bottom: 24px;
     position: relative;
 }
@@ -21,7 +22,7 @@
     border-radius: 0px 0px 10px 10px;
     padding-top: 90px;
     padding-bottom: 40px;
-    min-height: 100px;
+    min-height: 140px;
     font-family: 'Montserrat', sans-serif;
 }
 

@@ -3,6 +3,20 @@
     text-align: center;
 }
 
-.header img {
+.img-PC {
     max-width: 100%;
+}
+.img-Mobile{
+    display: none;
+}
+
+@media only screen and (max-width: 500px) {
+    .img-PC{
+        display: none;
+    }
+    .img-Mobile{
+        width: 100%;
+        display: block;
+    }
+    
 }
